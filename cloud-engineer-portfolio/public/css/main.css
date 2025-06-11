@@ -148,3 +148,30 @@ header h2 {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
 }
+
+/* Background Elements */
+.cloud-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.cloud-icon {
+    position: absolute;
+    color: white;
+    animation: cloudMove 20s linear infinite;
+}
+
+.bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, #0f172a);
+    z-index: 10;
+}
+
+@keyframes cloudMove {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+}
+
