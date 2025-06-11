@@ -225,3 +225,116 @@ header h2 {
     color: #94a3b8;
 }
 
+/* Architecture Diagram */
+.arch-diagram {
+    background: rgba(1, 22, 39, 0.7);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ai-engine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ai-engine i {
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+.ai-engine h4 {
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 0.5rem;
+}
+
+.service-item i {
+    color: #86efac;
+    margin-bottom: 0.5rem;
+}
+
+.service-item h4 {
+    font-size: 0.875rem;
+}
+
+.operations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .operations-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+.operations-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 0.5rem;
+    grid-column: span 1;
+}
+
+@media (min-width: 640px) {
+    .operations-item {
+        grid-column: span 3;
+    }
+}
+
+.operations-item i {
+    color: #f87171;
+    margin-bottom: 0.5rem;
+}
+
+.operations-item h4 {
+    font-size: 0.875rem;
+}
+
+.dashboard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 0.5rem;
+}
+
+.dashboard-item i {
+    color: #86efac;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-item h4 {
+    font-size: 0.875rem;
+}
