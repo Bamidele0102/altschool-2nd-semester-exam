@@ -107,8 +107,110 @@
                 </div>
             </div>
         </section>
-     
-         <!-- Technical Showcase -->
+        
+        <!-- Technical Showcase -->
+         <section class="fade-in">
+            <h2>DevOps & Cloud Expertise</h2>
+            <p>Modern infrastructure and deployment pipelines</p>
+            
+            <div class="tech-showcase-grid">
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <i class="fas fa-code-branch text-3xl"></i>
+                        <div>
+                            <h3>CI/CD Automation</h3>
+                            <p>Zero-downtime deployments with GitOps workflow</p>
+                        </div>
+                    </div>
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-controls">
+                                <div class="control red"></div>
+                                <div class="control yellow"></div>
+                                <div class="control green"></div>
+                            </div>
+                            <div>bash - DevOps Pipeline</div>
+                        </div>
+                        <div class="terminal-body" id="terminal-output">
+                            <!-- Terminal content will be populated by JS -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-header">
+                        <i class="fas fa-infinity text-3xl"></i>
+                        <div>
+                            <h3>Infrastructure as Code</h3>
+                            <p>Reproducible, version-controlled environments</p>
+                        </div>
+                    </div>
+                    <div class="code-editor">
+                        <div class="code-tabs">
+                            <button class="code-tab active">Terraform</button>
+                            <button class="code-tab">CloudFormation</button>
+                        </div>
+                        <pre class="terraform-code">
+                            <span class="resource">resource</span> <span class="string">"aws_eks_cluster"</span> <span class="name">"ai_optimizer"</span> {
+                                <span class="key">name</span>     = <span class="string">"intellicloud-prod"</span>
+                                <span class="key">role_arn</span> = aws_iam_role.eks.arn
+                                <span class="key">version</span>  = <span class="string">"1.24"</span>
+                                <span class="key">vpc_config</span> {
+                                    <span class="key">subnet_ids</span> = [
+                                    aws_subnet.private_1a.id,
+                                    aws_subnet.private_1b.id
+                                    ]
+                                }
+                                
+                                <span class="key">scaling_config</span> {
+                                    <span class="key">desired_size</span> = <span class="number">3</span>
+                                    <span class="key">max_size</span>     = <span class="number">10</span>
+                                    <span class="key">min_size</span>     = <span class="number">3</span>
+                                }
+                            }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>Technology Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="/assets/icons/aws.svg" alt="AWS">
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/gcp.svg" alt="Google Cloud">
+                        <span>Google Cloud</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/docker.svg" alt="Docker">
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/k8s.svg" alt="Kubernetes">
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/python.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/terraform.svg" alt="Terraform">
+                        <span>Terraform</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-git-alt text-4xl"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="/assets/icons/prometheus.svg" alt="Prometheus">
+                        <span>Prometheus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
      
          <!-- Professional Bio -->
      
