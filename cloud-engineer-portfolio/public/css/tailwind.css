@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custum CSS style */
+/* Custom CSS style */
 :root {
     --primary: #2563eb;
     --secondary: #7c3aed;
