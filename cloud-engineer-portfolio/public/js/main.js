@@ -1,5 +1,5 @@
-// Scroll animations
 document.addEventListener('DOMContentLoaded', () => {
+    // Scroll animations
     const fadeElements = document.querySelectorAll('.fade-in');
     
     const observer = new IntersectionObserver((entries) => {
