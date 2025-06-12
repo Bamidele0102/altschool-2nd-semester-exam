@@ -805,3 +805,114 @@ footer {
     transform: translateY(0);
 }
 
+/* Navigation */
+.nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(30, 41, 59, 0.6);
+    color: #60a5fa;
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+/* Project Page Specific Styles */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* Pipeline */
+.pipeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pipeline-step {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #2563eb 0%, #7c3aed 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.step-content {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.pipeline-arrow {
+    margin: 0.5rem 0;
+    color: #4f46e5;
+}
+
+/* Form Styles */
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+.form-input::placeholder {
+    color: #94a3b8;
+}
