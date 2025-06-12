@@ -1,5 +1,23 @@
+// Update navigation highlighting
+function updateNavigation() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        
+        if (currentPath === link.getAttribute('href')) {
+            link.classList.add('active');
+        } else if (currentPath === '/' && link.getAttribute('href') === '/') {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Scroll animations
 document.addEventListener('DOMContentLoaded', () => {
-    // Scroll animations
+    updateNavigation();
+
     const fadeElements = document.querySelectorAll('.fade-in');
     
     const observer = new IntersectionObserver((entries) => {
@@ -34,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const terminal = document.getElementById('terminal-output');
     
     function typeCommand() {
+        if (!terminal) return;
         const command = commands[currentCommand];
         
         if (!isDeleting && charIndex <= command.length) {
