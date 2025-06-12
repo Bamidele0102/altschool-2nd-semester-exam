@@ -13,11 +13,10 @@ const __dirname = path.dirname(__filename);
 import helmet from 'helmet';
 app.use(helmet());
 
-// Routes
-// Serve static files from /public
-app.use('/public', express.static(path.join(__dirname, 'public')));
+// Serve static files from /public at the root (so /project.html works)
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve static files from /src
+// Serve static files from /src (optional, for dev)
 app.use('/src', express.static(path.join(__dirname, 'src')));
 
 // Serve index.html for the root route
@@ -25,7 +24,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
 
-// New route for project details
+// Optional: Route for /project (if you want /project as well as /project.html)
 app.get('/project', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'project.html'));
 });
