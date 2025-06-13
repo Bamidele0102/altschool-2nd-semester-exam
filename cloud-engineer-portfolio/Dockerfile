@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build:css
 
 # Remove devDependencies for smaller image
-RUN npm prune --production
+RUN npm prune --omit=dev
 
 # Expose port
 EXPOSE 3000
