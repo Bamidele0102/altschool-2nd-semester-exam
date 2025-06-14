@@ -13,6 +13,11 @@ const __dirname = path.dirname(__filename);
 import helmet from 'helmet';
 app.use(helmet());
 
+app.use((req, res, next) => {
+	console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+	next();
+});
+
 // Serve static files from /public at the root (so /project.html works)
 app.use(express.static(path.join(__dirname, 'public')));
 
