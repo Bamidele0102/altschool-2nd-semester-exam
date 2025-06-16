@@ -17,10 +17,20 @@ The app features a dynamic landing page, interactive elements, a detailed projec
 `https://52.50.147.114` -->
 
 **Domain:**  
-`https://www.clouddeck.site/`
+<https://www.clouddeck.site/>
 
-**Screenshot:**  
-![Cloud Engineer Portfolio Screenshot](<SCREENSHOT_FILENAME>)
+**Screenshots:** 
+![Cloud Engineer Portfolio Screenshot](/web-app-images/landing.png)
+
+![Project Details Screenshot](/web-app-images/project.png)
+
+**Terminal Simulation Screenshot:**
+
+![Terminal Simulation Screenshot](/web-app-images/terminal.png)
+
+**Video Demo:**
+
+[![Watch the video](https://img.youtube.com/vi/D7mUt4Jgy44/0.jpg)](https://www.youtube.com/watch?v=D7mUt4Jgy44)
 
 ---
 
