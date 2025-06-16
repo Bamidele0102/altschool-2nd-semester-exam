@@ -18,6 +18,11 @@ app.use((req, res, next) => {
 	next();
 });
 
+// Block direct access to /project.html
+app.get('/project.html', (req, res) => {
+  res.status(404).send('Not found');
+});
+
 // Serve static files from /public at the root (so /project.html works)
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -29,7 +34,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
 
-// Optional: Route for /project (if you want /project as well as /project.html)
+// Optional: Route for /project
 app.get('/project', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'project.html'));
 });
